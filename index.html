@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#11152f">
+    <title>Conecta — Estude em grupo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-shell">
+
+        <!-- CABEÇALHO -->
+        <header class="topbar">
+            <a class="brand" href="#" aria-label="Conecta início">
+                <span class="brand-mark">✦</span>
+                <span>conecta<span class="brand-dot">.</span></span>
+            </a>
+
+            <span class="status-pill">
+                <i></i> comunidade ativa
+            </span>
+        </header>
+
+        <main>
+
+            <!-- TELA INICIAL -->
+            <section class="hero">
+                <div class="hero-copy">
+                    <span class="eyebrow">APRENDER JUNTO É MELHOR</span>
+
+                    <h1>
+                        Seu próximo<br>
+                        <span>grupo de estudos</span><br>
+                        começa aqui.
+                    </h1>
+
+                    <p>
+                        Encontre pessoas, compartilhe conhecimento
+                        e transforme dúvidas em conquistas.
+                    </p>
+
+                    <button class="primary-btn" data-go="criar">
+                        ＋ Criar meu grupo
+                    </button>
+                </div>
+
+                <div class="hero-art" aria-hidden="true">
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+                    <div class="book">✧</div>
+
+                    <span class="float f1">＋</span>
+                    <span class="float f2">✦</span>
+                    <span class="float f3">●</span>
+                </div>
+            </section>
+
+            <!-- MENU DE NAVEGAÇÃO -->
+            <nav class="tabs" aria-label="Navegação principal">
+
+                <button class="tab active" data-tab="inicio">
+                    <span>⌂</span> Início
+                </button>
+
+                <button class="tab" data-tab="criar">
+                    <span>✚</span> Criar grupo
+                </button>
+
+                <button class="tab" data-tab="painel">
+                    <span>▥</span> Sustentabilidade
+                </button>
+
+            </nav>
+
+            <!-- SEÇÃO 1: INÍCIO -->
+            <section class="view active" id="inicio">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">CONECTE-SE</span>
+                        <h2>Grupos em destaque</h2>
+                    </div>
+
+                    <span class="count">03 grupos</span>
+                </div>
+
+                <div class="group-list" id="groupList">
+
+                    <!-- GRUPO 1 -->
+                    <article class="group-card">
+
+                        <div class="subject-icon purple">∑</div>
+
+                        <div class="group-info">
+                            <span class="tag">MATEMÁTICA</span>
+
+                            <h3>Matemática sem medo</h3>
+
+                            <p>
+                                Funções, equações e preparação para provas.
+                            </p>
+
+                            <div class="meta">
+                                ◷ Ter. e Qui. · 18h
+                                <span>♙ 8 participantes</span>
+                            </div>
+                        </div>
+
+                        <button class="join-btn" aria-label="Participar do grupo">
+                            ＋
+                        </button>
+
+                    </article>
+
+                    <!-- GRUPO 2 -->
+                    <article class="group-card">
+
+                        <div class="subject-icon blue">{ }</div>
+
+                        <div class="group-info">
+                            <span class="tag">PROGRAMAÇÃO</span>
+
+                            <h3>Dev de primeira viagem</h3>
+
+                            <p>
+                                Lógica, JavaScript e projetos práticos.
+                            </p>
+
+                            <div class="meta">
+                                ◷ Seg. e Qua. · 19h
+                                <span>♙ 12 participantes</span>
+                            </div>
+                        </div>
+
+                        <button class="join-btn" aria-label="Participar do grupo">
+                            ＋
+                        </button>
+
+                    </article>
+
+                    <!-- GRUPO 3 -->
+                    <article class="group-card">
+
+                        <div class="subject-icon pink">文</div>
+
+                        <div class="group-info">
+                            <span class="tag">PORTUGUÊS</span>
+
+                            <h3>Redação colaborativa</h3>
+
+                            <p>
+                                Repertório, estrutura e correção de textos.
+                            </p>
+
+                            <div class="meta">
+                                ◷ Sáb. · 14h
+                                <span>♙ 6 participantes</span>
+                            </div>
+                        </div>
+
+                        <button class="join-btn" aria-label="Participar do grupo">
+                            ＋
+                        </button>
+
+                    </article>
+
+                </div>
+
+                <div class="tip-card">
+                    <span class="tip-icon">✦</span>
+
+                    <div>
+                        <strong>Uma dica para hoje</strong>
+
+                        <p>
+                            Estudar em grupo ajuda a trocar perspectivas
+                            e manter a motivação.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- SEÇÃO 2: CRIAR GRUPO -->
+            <section class="view" id="criar">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">ASSISTENTE INTELIGENTE</span>
+                        <h2>Crie seu grupo</h2>
+                    </div>
+
+                    <span class="ai-badge">✧ IA</span>
+                </div>
+
+                <div class="form-card">
+
+                    <label for="discipline">
+                        Qual disciplina você quer estudar?
+                    </label>
+
+                    <input
+                        id="discipline"
+                        type="text"
+                        placeholder="Ex.: Biologia, Matemática, JavaScript..."
+                    >
+
+                    <label for="level">
+                        Nível de conhecimento
+                    </label>
+
+                    <select id="level">
+                        <option>Iniciante</option>
+                        <option>Intermediário</option>
+                        <option>Avançado</option>
+                    </select>
+
+                    <label for="goal">
+                        Qual é o objetivo do grupo?
+                    </label>
+
+                    <select id="goal">
+                        <option>Revisar conteúdos para uma prova</option>
+                        <option>Aprender do zero</option>
+                        <option>Fazer atividades e projetos</option>
+                        <option>Preparação para vestibular</option>
+                    </select>
+
+                    <button class="primary-btn full" id="generateBtn">
+                        ✧ Gerar sugestão com IA
+                    </button>
+
+                    <!-- RESULTADO DA IA -->
+                    <div class="ai-result" id="aiResult" aria-live="polite">
+
+                        <div class="result-placeholder">
+                            <span>✧</span>
+
+                            <strong>
+                                Sua sugestão aparecerá aqui
+                            </strong>
+
+                            <p>
+                                Informe a disciplina para receber
+                                uma proposta de horário e monitor.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <button
+                        class="secondary-btn full"
+                        id="publishBtn"
+                        disabled
+                    >
+                        Publicar grupo
+                    </button>
+
+                </div>
+
+                <p class="disclaimer">
+                    * Assistente demonstrativo: as recomendações são
+                    simuladas por regras em JavaScript, sem conexão
+                    com uma IA externa.
+                </p>
+
+            </section>
+
+            <!-- SEÇÃO 3: SUSTENTABILIDADE -->
+            <section class="view" id="painel">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">IMPACTO E CONTINUIDADE</span>
+                        <h2>Modelo sustentável</h2>
+                    </div>
+
+                    <span class="live-label">● DEMONSTRAÇÃO</span>
+                </div>
+
+                <!-- RECEITA PRINCIPAL -->
+                <div class="revenue-hero">
+
+                    <span>RECEITA MENSAL ESTIMADA</span>
+
+                    <strong>
+                        R$ 2.450<span>,00</span>
+                    </strong>
+
+                    <small>
+                        Simulação ilustrativa do modelo
+                    </small>
+
+                    <div class="revenue-bars">
+                        <i style="height:35%"></i>
+                        <i style="height:52%"></i>
+                        <i style="height:45%"></i>
+                        <i style="height:70%"></i>
+                        <i style="height:62%"></i>
+                        <i style="height:88%"></i>
+                        <i style="height:100%"></i>
+                    </div>
+
+                </div>
+
+                <!-- INDICADORES -->
+                <div class="metric-grid">
+
+                    <div class="metric">
+                        <span>👥</span>
+                        <strong>350</strong>
+                        <small>usuários ativos</small>
+                    </div>
+
+                    <div class="metric">
+                        <span>✦</span>
+                        <strong>R$ 7,00</strong>
+                        <small>plano premium/mês</small>
+                    </div>
+
+                    <div class="metric">
+                        <span>◎</span>
+                        <strong>R$ 1.400</strong>
+                        <small>parcerias estimadas</small>
+                    </div>
+
+                    <div class="metric">
+                        <span>↗</span>
+                        <strong>R$ 2.450</strong>
+                        <small>receita total estimada</small>
+                    </div>
+
+                </div>
+
+                <!-- FONTES DE RECEITA -->
+                <div class="section-heading compact">
+                    <div>
+                        <span class="eyebrow">COMO SE MANTÉM?</span>
+                        <h2>Fontes de receita</h2>
+                    </div>
+                </div>
+
+                <div class="revenue-row">
+
+                    <span class="revenue-icon purple">✦</span>
+
+                    <div>
+                        <strong>Plano premium</strong>
+                        <small>Recursos extras e salas exclusivas</small>
+                    </div>
+
+                    <b>R$ 1.050</b>
+
+                </div>
+
+                <div class="revenue-row">
+
+                    <span class="revenue-icon blue">◇</span>
+
+                    <div>
+                        <strong>Parcerias educacionais</strong>
+                        <small>Instituições e projetos parceiros</small>
+                    </div>
+
+                    <b>R$ 1.400</b>
+
+                </div>
+
+                <p class="disclaimer">
+                    Valores fictícios para apresentação do protótipo.
+                    Não representam faturamento real ou garantia de receita.
+                </p>
+
+            </section>
+
+        </main>
+
+        <!-- RODAPÉ -->
+        <footer>
+            <span class="brand-mini">✦ conecta.</span>
+            <span>Estudar, compartilhar, evoluir.</span>
+        </footer>
+
+    </div>
+
+    <!-- ARQUIVO JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
